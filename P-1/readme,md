@@ -1,0 +1,17 @@
+# Hosting Multiple Websites on One Web Server
+
+**Objective:**  
+This practical demonstrates how to host three websites on a single EC2 instance using the Apache web server.
+
+**Tools/Technologies Used:**  
+- AWS EC2 (Ubuntu)
+- Apache Web Server
+- Linux Command Line
+
+**Key Concepts:**  
+- Virtual Hosting
+- Directory Management
+- Apache Configuration
+
+**Outcome:**  
+By the end of this practical, you'll have three websites hosted on a single server, accessible via unique paths.
