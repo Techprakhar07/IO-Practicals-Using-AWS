@@ -1,0 +1,27 @@
+# Managing and Optimizing Amazon EBS Volumes
+
+### Steps to Complete the Practical
+
+1. **Launch an EC2 Instance**  
+   - Go to the AWS Management Console and launch an EC2 instance.
+   - Select **Ubuntu** as the AMI and **t2.micro** as the instance type.
+
+2. **Create and Attach an EBS Volume**  
+   - Go to the EBS service and create a new volume (5GB, gp2).
+   - Attach the volume to your EC2 instance.
+
+3. **Partition and Mount the Volume**  
+   - Connect to the instance using SSH.
+   - Partition the volume:  
+     `sudo fdisk /dev/xvdf`
+   - Format the volume:  
+     `sudo mkfs.ext4 /dev/xvdf1`
+   - Mount the volume:  
+     `sudo mount /dev/xvdf1 /mnt/volume`
+
+4. **Create a Snapshot**  
+   - Go to the EBS service and create a snapshot of the attached volume.
+
+5. **Restore Volume from Snapshot**  
+   - Use the snapshot to create a new volume.
+   - Attach the new volume to the EC2 instance and verify the data.
